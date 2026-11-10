@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Moderna hemsidor för lokala småföretagare</title>
+    <meta name="description" content="Snabba, säkra och mobilanpassade hemsidor utan WordPress.Vi bygger professionella webbplatser med modern teknik och tar hand om hosting, säkerhet och support – så att du kan fokusera på ditt företag.">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon---webdesignbymats.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      rel="stylesheet"
+      id="silktide-consent-manager-css"
+      href="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.1/silktide-consent-manager.css"
+      integrity="sha384-EdMq+R+YOnsbelo08wPenoTlnxbAyxI11NMIxzugx/qAsbh64KcOkqxYqq6pfvO/"
+      crossorigin="anonymous"
+    />
+    <style id="silktide-consent-manager-overrides">
+      #stcm-wrapper {
+        --boxShadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
+        --fontFamily: Helvetica Neue, Segoe UI, Arial, sans-serif;
+        --primaryColor:#06B6D4;
+        --backgroundColor: #ffffff;
+        --textColor: #4b494b;
+        --backdropBackgroundColor: #00000033;
+        --backdropBackgroundBlur: 0px;
+        --iconColor: #06B6D4;
+        --iconBackgroundColor: #ffffff;
+      }
+    </style>
+    <script
+      src="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.1/silktide-consent-manager.js"
+      integrity="sha384-5Pt34uiIbCsvfiiZXoLi4HRf/YBXjr9c8e+gYeVo9smUaInNHYVtc8NZ8wUnXJIq"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.silktideConsentManager.init({
+        backdrop: {
+          show: true,
+        },
+        icon: {
+          position: "bottomLeft",
+        },
+        prompt: {
+          position: "bottomRight",
+        },
+        consentTypes: [
+          {
+            id: "essential",
+            label: "Grundläggande",
+            description:
+              "<p>Dessa cookies är nödvändiga för att webbplatsen ska fungera korrekt och kan inte stängas av. De hjälper till med saker som att logga in och ställa in dina integritetsinställningar.</p>",
+            required: true,
+            onAccept: function () {
+              console.log(
+                "Add logic for the required Essential consent type here",
+              );
+            },
+          },
+          {
+            id: "analytics",
+            label: "Analyser",
+            description:
+              "<p>Dessa cookies hjälper oss att förbättra webbplatsen genom att spåra vilka sidor som är mest populära och hur besökare navigerar runt på webbplatsen.</p>",
+            defaultValue: true,
+            gtag: "analytics_storage",
+          },
+          {
+            id: "marketing",
+            label: "Marknadsföring",
+            description:
+              "<p>Dessa cookies används av oss och våra annonspartners för att visa dig relevanta annonser på denna webbplats och på andra ställen, och för att mäta hur dessa kampanjer presterar.</p>",
+            gtag: ["ad_storage", "ad_user_data", "ad_personalization"],
+          },
+        ],
+        text: {
+          prompt: {
+            description:
+              "<p>Vi använder cookies på vår webbplats för att förbättra din användarupplevelse, tillhandahålla personligt anpassat innehåll och analysera vår trafik.</p>",
+            acceptAllButtonText: "Acceptera alla",
+            acceptAllButtonAccessibleLabel: "Acceptera alla cookies",
+            rejectNonEssentialButtonText: "Avvisa icke-nödvändiga",
+            rejectNonEssentialButtonAccessibleLabel:
+              "Avvisa alla icke-nödvändiga cookies",
+            preferencesButtonText: "Inställningar",
+            preferencesButtonAccessibleLabel: "Växla inställningar",
+          },
+          preferences: {
+            title: "Anpassa dina cookieinställningar",
+            description:
+              "<p>Vi respekterar din rätt till integritet. Du kan välja att inte tillåta vissa typer av cookies. Dina cookie-inställningar gäller för hela vår webbplats.</p>",
+            saveButtonText: "Spara och stäng",
+            saveButtonAccessibleLabel: "Spara dina cookie-inställningar",
+            creditLinkText: "Få den här bannern gratis",
+            creditLinkAccessibleLabel: "Få den här bannern gratis",
+          },
+        },
+      });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md sticky-top bg-body pt-0 mb-0 pb-1">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="https://webdesignbymats.com/"><span><img alt="webdesignbymats logo" src="assets/img/logo.svg" width="224" height="62"></span></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <footer class="text-body bg-body">
+        <div class="container"><div><article class="terms-and-conditions">
+  <header class="mb-4">
+    <h1>ALLMÄNNA VILLKOR – ÄG DIN HEMSIDA</h1>
+    <p class="lead"><strong>Webdesign by Mats</strong></p>
+    <p class="text-muted">
+      Version: 1.1<br>
+      Gäller från: 2026-11-10
+    </p>
+  </header>
+
+  <section class="mb-4">
+    <h2>1. Avtalets omfattning</h2>
+    <p>Dessa särskilda villkor gäller för tjänsten Äg din hemsida som tillhandahålls av Webdesign by Mats (nedan kallad Leverantören).</p>
+    <p>Tjänsten innebär att Leverantören utvecklar och levererar en färdig företagswebbplats mot en engångsbetalning.</p>
+    <p>Villkoren gäller tillsammans med:</p>
+    <ul>
+      <li>Godkänd offert.</li>
+      <li>Kundavtal.</li>
+      <li>Paketbeskrivning.</li>
+      <li>Dessa särskilda villkor.</li>
+      <li>Webdesign by Mats allmänna villkor.</li>
+    </ul>
+    <p>Vid motstridiga uppgifter gäller kundavtalet och den godkända offerten före dessa villkor.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>2. Leverantör</h2>
+    <p>
+      <strong>Företagsnamn:</strong> Matsdata<br>
+      <strong>Varumärke:</strong> Webdesign by Mats<br>
+      <strong>Organisationsnummer:</strong> 19660909-6653<br>
+      <strong>Adress:</strong> Författargatan 3 F, 703 70 Örebro<br>
+      <strong>Telefon:</strong> <a href="tel:+46704030745">070-403 07 45</a><br>
+      <strong>E-post:</strong> <a href="mailto:info@webdesignbymats.com">info@webdesignbymats.com</a><br>
+      <strong>Webbplats:</strong> <a href="https://webdesignbymats.com/" target="_blank" rel="noopener noreferrer">https://webdesignbymats.com/</a>
+    </p>
+  </section>
+
+  <section class="mb-4">
+    <h2>3. Kund och målgrupp</h2>
+    <p>Tjänsten riktar sig till företagare, enskilda firmor och andra verksamheter med giltigt organisationsnummer.</p>
+    <p>Tjänsten är inte avsedd för privatpersoner som konsumenter.</p>
+    <p>Kunden ansvarar för att de uppgifter som lämnas vid beställningen är korrekta.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>4. Tjänstens innehåll</h2>
+    <p>Äg din hemsida omfattar utveckling och leverans av en professionell företagswebbplats.</p>
+    <p>Följande ingår:</p>
+
+    <h3>Webbplats och design</h3>
+    <ul>
+      <li>Professionell företagswebbplats.</li>
+      <li>Responsiv design för mobil, surfplatta och dator.</li>
+      <li>HTML5, CSS3 och Bootstrap 5.</li>
+      <li>Personlig design och anpassning efter Kundens verksamhet.</li>
+      <li>Möjlighet att skapa en personlig mall efter överenskommelse.</li>
+      <li>Anpassning av färger, bilder, texter och layout.</li>
+      <li>Publicering av webbplatsen.</li>
+      <li>Anslutning av Kundens domän.</li>
+    </ul>
+
+    <h3>Funktioner</h3>
+    <ul>
+      <li>Kontaktformulär.</li>
+      <li>Google Maps.</li>
+      <li>Sociala medier-länkar.</li>
+      <li>Grundläggande SEO.</li>
+      <li>SSL-certifikat.</li>
+      <li>Cloudflare Hosting vid avtalad hostinglösning.</li>
+      <li>GitHub versionshantering under utvecklingsarbetet.</li>
+    </ul>
+
+    <h3>Innehåll</h3>
+    <ul>
+      <li>Hjälp med texter.</li>
+      <li>Bildredigering och bildoptimering.</li>
+      <li>Anpassning av bilder för webbpublicering.</li>
+      <li>Grundläggande strukturering av innehåll.</li>
+    </ul>
+
+    <p>Webbplatsens antal sidor, funktioner och omfattning ska framgå av den godkända offerten.</p>
+    <p>Om inget annat anges omfattas leveransen av den omfattning som specificeras i den aktuella paketbeskrivningen.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>5. Pris och betalningsvillkor</h2>
+    <p>Äg din hemsida kostar:</p>
+    <p><strong>7 990 kronor exklusive moms.</strong></p>
+    <p>Vid 25 % moms blir totalpriset:</p>
+    <p><strong>9 987,50 kronor inklusive moms.</strong></p>
+    <p>Betalningen delas upp i två delar:</p>
+
+    <h3>Första betalningen – 50 % vid beställning</h3>
+    <ul>
+      <li>3 995 kr exklusive moms.</li>
+      <li>4 993,75 kr inklusive moms.</li>
+    </ul>
+    <p>Den första betalningen ska vara mottagen innan utvecklingsarbetet påbörjas.</p>
+
+    <h3>Slutbetalning – 50 % efter avslutat projekt</h3>
+    <ul>
+      <li>3 995 kr exklusive moms.</li>
+      <li>4 993,75 kr inklusive moms.</li>
+    </ul>
+    <p>Slutbetalningen faktureras när webbplatsen är färdigställd och Kunden har fått möjlighet att granska och godkänna leveransen.</p>
+    <p>Slutbetalningen ska vara mottagen innan webbplatsens slutliga överlämning och äganderätt övergår till Kunden.</p>
+    <p>Betalning kan ske via Stripe Checkout, faktura eller annan överenskommen betalningsmetod.</p>
+    <p>Eventuella tilläggsarbeten debiteras separat efter Kundens skriftliga godkännande.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>6. Projektets genomförande</h2>
+    <p>Arbetet genomförs normalt i följande steg:</p>
+    <ol>
+      <li>Kostnadsfri konsultation och behovsanalys.</li>
+      <li>Offert och avtal.</li>
+      <li>Godkännande och betalning av första 50 %.</li>
+      <li>Insamling av texter, bilder och annat material.</li>
+      <li>Design och utveckling.</li>
+      <li>Kundgranskning och justeringar.</li>
+      <li>Slutbetalning av resterande 50 %.</li>
+      <li>Överlämning av webbplatsen.</li>
+    </ol>
+    <p>Normal utvecklingstid är cirka 3–7 arbetsdagar efter att nödvändigt material har mottagits. Tiden är preliminär och kan påverkas av projektets omfattning och Kundens återkoppling.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>7. Ingen bindningstid</h2>
+    <p>Äg din hemsida är ett engångsköp och omfattas inte av någon abonnemangs- eller bindningstid.</p>
+    <p>Kunden betalar 50 % vid beställning och resterande 50 % när projektet är färdigställt enligt punkt 5.</p>
+    <p>Eventuella framtida kostnader för hosting, support, domän, licenser eller andra externa tjänster regleras separat.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>8. Kundens material och ansvar</h2>
+    <p>Kunden ansvarar för att tillhandahålla det material som krävs för webbplatsen.</p>
+    <p>Detta kan omfatta:</p>
+    <ul>
+      <li>Företagsnamn.</li>
+      <li>Logotyp.</li>
+      <li>Bilder.</li>
+      <li>Texter.</li>
+      <li>Kontaktuppgifter.</li>
+      <li>Företagsinformation.</li>
+      <li>Beskrivningar av produkter och tjänster.</li>
+    </ul>
+    <p>Kunden ansvarar för att materialet är korrekt och att Kunden har rätt att använda det.</p>
+    <p>Kunden ansvarar även för att innehållet på webbplatsen följer gällande lagstiftning.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>9. Design och ändringar</h2>
+    <p>Webbplatsen utvecklas enligt den designinriktning som parterna har kommit överens om.</p>
+    <p>Kunden får möjlighet att granska webbplatsen innan slutlig publicering.</p>
+    <p>Rimliga justeringar inom den ursprungliga offertens omfattning ingår.</p>
+    <p>Följande betraktas normalt som tilläggsarbeten:</p>
+    <ul>
+      <li>Nya sidor utöver avtalad omfattning.</li>
+      <li>Större designförändringar efter godkännande.</li>
+      <li>Nya avancerade funktioner.</li>
+      <li>Extra språkversioner.</li>
+      <li>Specialutvecklade system.</li>
+      <li>Omfattande textproduktion.</li>
+      <li>Nya integrationer.</li>
+    </ul>
+    <p>Tilläggsarbeten utförs först efter att Kunden godkänt eventuell extra kostnad.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>10. Hosting och drift</h2>
+    <p>Hosting ingår inte automatiskt som en permanent tjänst i engångsköpet.</p>
+    <p>Leverantören erbjuder frivillig hosting och teknisk support från:</p>
+    <p><strong>199 kronor per månad exklusive moms.</strong></p>
+    <p>Vid 25 % moms blir priset 248,75 kronor per månad inklusive moms.</p>
+    <p>Hosting kan omfatta:</p>
+    <ul>
+      <li>Publicering av webbplats.</li>
+      <li>Cloudflare Hosting.</li>
+      <li>SSL-certifikat.</li>
+      <li>Grundläggande DNS-konfiguration.</li>
+      <li>Teknisk hantering av webbplatsens drift.</li>
+    </ul>
+    <p>Hosting och support kräver ett separat godkännande och regleras av ett särskilt avtal.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>11. Frivillig support och underhåll</h2>
+    <p>Kunden kan välja att teckna ett separat avtal för löpande support och underhåll.</p>
+    <p>Support kan exempelvis omfatta:</p>
+    <ul>
+      <li>Teknisk felsökning.</li>
+      <li>Hjälp vid publiceringsproblem.</li>
+      <li>Mindre innehållsändringar.</li>
+      <li>Teknisk rådgivning.</li>
+      <li>Grundläggande hantering av webbplatsen.</li>
+    </ul>
+    <p>Omfattning, pris och eventuella uppdateringar ska framgå av det separata supportavtalet.</p>
+    <p>Support omfattar inte automatiskt nya funktioner, större ombyggnationer eller omfattande innehållsproduktion.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>12. Domännamn</h2>
+    <p>Kunden äger sitt domännamn.</p>
+    <p>Leverantören kan hjälpa till med:</p>
+    <ul>
+      <li>Domänflytt.</li>
+      <li>DNS-inställningar.</li>
+      <li>Anslutning till Cloudflare.</li>
+      <li>Grundläggande domänadministration.</li>
+    </ul>
+    <p>Kunden ansvarar för domänregistrering, förnyelseavgifter och att kontaktuppgifterna hos domänleverantören är korrekta.</p>
+    <p>Om Leverantören hjälper till med domänhantering ska domänen registreras i Kundens namn, om inte annat skriftligen överenskommits.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>13. E-posttjänster</h2>
+    <p>E-posttjänster såsom Google Workspace och Microsoft 365 ingår inte i engångsköpet.</p>
+    <p>Leverantören kan hjälpa Kunden med installation och konfiguration av professionell e-post mot separat överenskommelse.</p>
+    <p>Eventuella licens- och abonnemangskostnader betalas av Kunden.</p>
+  </section>
+
+  <section class="mb-4">
+    <h2>14. Äganderätt till webbplatsen</h2>
+    <p>När Kunden har betalat hela det avtalade beloppet övergår äganderätten till den färdiga, kundspecifika webbplatsen till Kunden.</p>
+
+
+</div></div>
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 text-start text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 text-body">Meny</h3>
+                    <ul class="list-unstyled">
+                        <li style="border-style: none;"><a class="text-decoration-none link-body-emphasis" href="index.html#hero">Hem</a></li>
+                        <li><a class="text-decoration-none link-body-emphasis" href="index.html#ommig">Om mig</a></li>
+                        <li><a class="text-decoration-none link-body-emphasis" href="index.html#tjanster">Tjänster</a></li>
+                        <li><a class="text-decoration-none link-body-emphasis" href="index.html#priser">Priser</a></li>
+                        <li><a class="text-decoration-none link-body-emphasis" href="index.html#faq">Vanliga frågor</a></li>
+                        <li><a class="text-decoration-none link-body-emphasis" href="index.html/kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-start text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 text-body">Dokument</h3>
+                    <ul class="list-unstyled">
+                        <li><a class="text-decoration-none link-body-emphasis" href="integritetspolicy.html">Integritetspolicy</a></li>
+                        <li><a class="text-decoration-none link-body-emphasis" href="cookiepolicy.html">Cookiepolicy</a></li>
+                        <li><a class="text-decoration-none link-body-emphasis" href="villkor.html">Allmänna villkor</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last">
+                    <div class="fw-bold d-flex align-items-center mb-2"><span><a href="index.html"><img alt="webdesignbymats logo" src="assets/img/logo.svg" width="260" height="100"></a></span></div>
+                    <p class="mb-0" style="font-weight: bold;">Kontakt</p>
+                    <p class="mb-0">Email: info@webdesignbymats.com</p>
+                    <p class="mt-0">Tel: 070 - 403 07 45</p>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between align-items-center pt-3">
+                <p class="mb-0">Copyright © 2026 Webdesignbymats.com</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#"><svg class="bi bi-facebook text-body" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a href="#"><svg class="bi bi-instagram text-body" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a href="#"><svg class="bi bi-linkedin text-body" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
